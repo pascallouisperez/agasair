@@ -1,0 +1,156 @@
+% \documentclass[10pt, twocolumn]{article}
+\documentclass[10pt]{article}
+
+% \usepackage{booktabs}
+\usepackage{multicol}
+\usepackage[cm]{fullpage}
+\usepackage{tikz}
+\usepackage{environ}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% creates empty checkboxes to be used as the second
+% argument to \item on checklist
+\newcommand{\checkbox}{\makebox[3ex][r]{\Large{$\square$}}}
+
+% draws a dashed box around to group checklists
+% a task has a title, which is the group title
+\NewEnviron{task}[1]{\par
+\begin{tikzpicture}
+\node[rectangle,minimum width=0.9\linewidth] (m)
+  {\begin{minipage}{0.85\linewidth}
+    \begin{center}\uppercase{#1}\\\vspace{1em}\BODY\end{center}
+   \end{minipage}};
+\draw[dashed](m.south west) rectangle (m.north east);
+\end{tikzpicture}\vspace{1em}
+}
+
+% checklist env sets up a table and format the items.
+% in case a item has steps use the \step{asdf}
+% command.
+\newenvironment{checklist}[1]{%
+  \renewcommand{\item}[2]{%
+    ##1\hspace{2em}\dotfill\makebox{\uppercase{##2}}\\
+  }
+  \newcommand{\step}[1]{%
+    \hspace*{10em}-\hspace*{\labelsep}##1\\
+  }
+  \begin{tabular}{p{0.8\linewidth}}
+       \multicolumn{1}{l}{\textbf{\uppercase{#1}}}\\
+}{\end{tabular}\vspace{1em}}
+
+
+\begin{document}
+
+% title
+\begin{center}\LARGE Piper PA-28-151 (121PW) \textbar\ \textbf{Preflight} \end{center}
+\vskip0.5em
+
+% items
+\begin{multicols}{2}
+\begin{checklist}{In-cabin check}
+  \item{Aircraft Papers}{ARROW}
+  \item{Hobbs}{verify}
+  \item{Control Strap}{remove}
+  \item{Emergency equipment}{check}
+  \item{Ignition}{off, key out}
+  \item{Circuit Breakers}{in}
+  \item{Avionics}{off}
+  \item{Navigation Light}{on}
+  \item{Master Switch}{on}
+  \item{Fuel Gauges}{check}
+  \item{External Lights}{check}
+  \item{External Lights}{off}
+  \item{Master Switch}{off}
+  \item{Wing Flaps}{down}
+\end{checklist}
+
+\begin{checklist}{Right wing}
+  \item{Flaps}{check}
+  \item{Aileron}{check}
+  \item{Wing Tip \& Lights}{check}
+  \item{Wing Leading Edge}{check}
+  \item{Fuel tank vent}{check}
+  \item{Sump left tank}{point 1, 2}
+  \item{Verify fuel level}{}
+  \item{Inspection plates}{check}
+  \item{Cabin ventilation}{check}
+  \item{Cabin door hinges}{check}
+\end{checklist}
+
+\begin{checklist}{Right main gear}
+  \item{Strut}{check}
+  \item{Tire (30 psi)}{clear}
+  \item{Brake system}{check}
+  \item{Tiedown}{remove}
+  \item{Chocks}{remove}
+\end{checklist}
+
+\begin{checklist}{Nose}
+  \item{Windscreen}{clean}
+  \item{Right cowling}{open}
+  \item{Oil heating}{check}
+  \item{Engine \& cables}{clean}
+  \item{Bird Plugs}{remove}
+  \item{Air Intakes}{check}
+  \item{Alternator Belt}{check}
+  \item{Spinner}{check}
+\end{checklist}
+
+\begin{checklist}{Nose (cont.)}
+  \item{Propeller}{check}
+  \item{Muffler}{check}
+  \item{Landing Light}{check}
+  \item{Nose strut \& Steering}{check}
+  \item{Nose Tire (30 psi)}{check}
+  \item{Chocks}{remove}
+  \item{Left cowling}{open}
+  \item{Left cowling}{open}
+\end{checklist}
+
+\begin{checklist}{Left main gear}
+  \item{Strut}{check}
+  \item{Tire (30 psi)}{clear}
+  \item{Brake system}{check}
+  \item{Tiedown}{remove}
+  \item{Chocks}{remove}
+\end{checklist}
+
+\begin{checklist}{Left wing}
+  \item{Cabin ventilation}{check}
+  \item{Inspection plates}{check}
+  \item{Fuel tank vent}{check}
+  \item{Sump left tank}{point 1, 2}
+  \item{Verify fuel level}{}
+  \item{Wing Leading Edge}{check}
+  \item{Wing Tip \& Lights}{check}
+  \item{Aileron}{check}
+  \item{Flaps}{check}
+\end{checklist}
+
+\begin{checklist}{Fuselage \& Empanage}
+  \item{Skin}{check}
+  \item{Antennas}{check}
+  \item{Stabilator}{check}
+  \item{Trim tab}{check}
+  \item{Rudder}{check}
+  \item{Tie down}{remove}
+  \item{Baggage Door}{check}
+\end{checklist}
+
+\begin{checklist}{Before boarding}
+  \item{Oil heating}{remove}
+  \item{Right cowling}{close}
+  \item{Final visual inspection}{}
+  \item{Pitot Static mast}{check}
+  \item{Tie downs}{check}
+  \item{Chocks}{check}
+\end{checklist}
+\end{multicols}
+\end{document}
