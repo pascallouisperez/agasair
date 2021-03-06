@@ -6,6 +6,7 @@
 \usepackage{environ}
 \usepackage{fancyhdr}
 \usepackage{amssymb}
+\usepackage{xfrac}
 
 \pagestyle{fancy}
 \fancyhead{}
