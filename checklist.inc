@@ -7,6 +7,7 @@
 \usepackage{fancyhdr}
 \usepackage{amssymb}
 \usepackage{xfrac}
+\usepackage{mfirstuc}
 
 \pagestyle{fancy}
 \fancyhead{}
@@ -24,7 +25,7 @@
 % command.
 \newenvironment{checklist}[1]{%
   \renewcommand{\item}[2]{%
-    ##1\hspace{1.5em}\dotfill\makebox{\uppercase{##2}}\\
+    \capitalisewords{##1}\hspace{1.5em}\dotfill\makebox{\uppercase{##2}}\\
   }
   \newcommand{\step}[1]{%
     \hspace*{10em}-\hspace*{\labelsep}##1\\
