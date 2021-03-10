@@ -1,6 +1,7 @@
-\documentclass[letterpaper,12pt]{article}
+\documentclass[letterpaper,12pt,twoside]{article}
 
 \setlength{\oddsidemargin}{0.1in}
+\setlength{\evensidemargin}{0.1in}
 \setlength{\topmargin}{-30pt}
 \setlength{\headsep}{10pt}
 \setlength{\textwidth}{450pt}

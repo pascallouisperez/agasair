@@ -1,16 +1,120 @@
 \input{checklist.inc}
 
-\fancyhead[L]{\textbf{Flight}}
+\fancyhead[LO]{\textbf{Pre-takeoff}}
+\fancyhead[LE]{\textbf{Flight}}
 \fancyhead[R]{Piper PA-28-151 (121PW)}
 
 \begin{document}
 
-% items
+% Pre-takeoff
+\begin{multicols}{2}
+\begin{checklist}{Passenger briefing}
+    \item{\textbf{S}eats \& Seat Belts}{}
+    \item{\textbf{A}ir vents, passenger discomfort}{}
+    \item{\textbf{F}ire extinguisher}{}
+    \item{\textbf{E}xit doors \& Evacuation}{}
+    \item{\textbf{T}raffic \& Sterile Cockpit}{}
+    \item{\textbf{Y}our questions?}{}
+\end{checklist}
+
+\begin{checklist}{Pre-start}
+    \item{Pre-flight}{done}
+    \item{Seats \& Seat Belts}{secure}
+    \item{Doors \& Windows}{secure}
+    \item{Parking Break}{set}
+    \item{Fuel Selector}{fullest}
+    \item{Altimeter}{field}
+    \item{Controls}{free/correct}
+    \item{Avionics}{off}
+    \item{Circuit Breakers}{in}
+\end{checklist}
+
+\begin{checklist}{Start}
+    \item{Primer}{$4\times$}
+    \item{Navigation Light}{on}
+    \item{Master Switch}{on}
+    \item{Mixture}{rich}
+    \item{Throttle}{1/8 inch}
+    \item{Fuel Pump}{on}
+    \item{Fuel Pressure}{green}
+    \item{Toe Brakes}{hold}
+    \item{Ignition}{start}
+    \item{Throttle}{1000 rpm}
+    \item{Oil Pressure}{green}
+    \item{Loadmeter}{charging}
+    \item{Fuel Selector}{emptiest}
+    \item{Fuel Pump}{off}
+    \item{Mixture}{lean \sfrac{3}{4} inch}
+\end{checklist}
+
+\begin{checklist}{Pre-taxi \& taxi}
+    \item{Flaps}{up}
+    \item{Lights}{as required}
+    \item{Avionics}{on}
+    \item{ATIS}{recorded}
+    \item{Instruments}{set}
+    \item{Clearance}{recorded}
+    \item{Transponder}{set}
+    \item{Parking Break}{off}
+    \item{Brakes, Gyros}{check}
+    \item{Ground}{contact}
+\end{checklist}
+
+\begin{checklist}{Runup}
+    \item{Doors \& Windows}{secure}
+    \item{Controls}{free/correct}
+    \item{Primer}{locked}
+    \item{Fuel Quantity}{note}
+    \item{Stabilator Trim}{T/O}
+    \item{Rudder Trim}{neutral}
+    \item{Fuel Pump}{on}
+    \item{Fuel Selector}{fullest}
+    \item{Mixture}{rich}
+    \item{Throttle}{$2000$ rpm}
+    \item{Engine Gauges}{green}
+    \item{Loadmeter}{check}
+    \item{Suction Gauge}{green}
+    \item{Magnetos}{$<125$ \& $50$}
+    \item{Carb heat}{on (drop)}
+    \item{Throttle}{idle}
+    \item{Carb heat}{off}
+    \item{Throttle}{$1000$ rpm}
+\end{checklist}
+
+\begin{checklist}{Takeoff briefing}
+    \item{Type, Winds, Runway}{}
+    \item{Speeds $V_R: 52$, $V_Y: 76$, $V_X: 66$}{}
+    \item{Emergency glide $V_G: 69$}{}
+    \item{Engine out $<700'$ AGL \& above}{}
+    \item{Sterile Cockpit $<2000'$ AGL}{}
+\end{checklist}
+
+\begin{checklist}{Holding short}
+    \item{Radios (coms, nav, GPS)}{set}
+    \item{Instruments}{set}
+    \item{Seat, belts, doors, windows}{secure}
+    \item{Primer}{locked}
+    \item{Ignition}{both}
+    \item{Lights}{as required}
+    \item{Carb heat}{off}
+    \item{Fuel Selector}{fullest}
+    \item{Mixture}{rich}
+    \item{Flaps}{as required}
+    \item{Transponder}{as required}
+\end{checklist}
+
+\noindent$\hookrightarrow$\ \textit{Lights, Camera, Action}
+
+\end{multicols}
+
+\pagebreak
+
+% Flight
 \begin{multicols}{2}
 \begin{checklist}{500' AGL check}
-  \item{Engine Gauges}{green}
-  \item{Flaps}{up}
-  \item{Area}{clear}
+    \item{Engine Gauges}{green}
+    \item{Flaps}{up}
+    \item{Area}{clear}
 \end{checklist}
 
 \begin{checklist}{1000' AGL check}
@@ -95,6 +199,6 @@
     \item{Pitot Static mast}{cover}
     \item{Canopy}{cover}
 \end{checklist}
-
 \end{multicols}
+
 \end{document}
