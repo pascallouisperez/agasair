@@ -1,8 +1,8 @@
 \documentclass[letterpaper,12pt,twoside]{article}
 
-\setlength{\oddsidemargin}{0.1in}
+\setlength{\oddsidemargin}{0.2in}
 \setlength{\evensidemargin}{0.1in}
-\setlength{\topmargin}{-30pt}
+\setlength{\topmargin}{-22pt}
 \setlength{\headsep}{10pt}
 \setlength{\textwidth}{450pt}
 \setlength{\textheight}{680pt}
@@ -38,4 +38,4 @@
   \noindent
   \begin{tabular}{p{0.95\linewidth}}
        \multicolumn{1}{l}{\textbf{\uppercase{#1}}}\\
-}{\end{tabular}\vspace{1em}}
+}{\end{tabular}\vspace{0.8em}}
