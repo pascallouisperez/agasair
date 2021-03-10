@@ -1,4 +1,16 @@
-\documentclass[11pt]{article}
+\documentclass[letterpaper,12pt]{article}
+
+\setlength{\oddsidemargin}{0.1in}
+\setlength{\topmargin}{-30pt}
+\setlength{\headsep}{10pt}
+\setlength{\textwidth}{450pt}
+\setlength{\textheight}{680pt}
+\usepackage{2up}
+\special{landscape}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot{}
 
 \usepackage{multicol}
 \usepackage{tikz}
@@ -7,19 +19,6 @@
 \usepackage{amssymb}
 \usepackage{xfrac}
 \usepackage{mfirstuc}
-\usepackage[
-  letterpaper,
-  top=0.5in,
-  headsep=1em,
-  marginparwidth=0pt,
-  marginpar=0pt,
-  lmargin=0.15in,
-  rmargin=0.15in,
-  footnotesep=1em
-]{geometry}
-
-\pagestyle{fancy}
-\fancyfoot{}
 
 \renewcommand{\footrulewidth}{0pt}
 \setlength{\tabcolsep}{0pt}
