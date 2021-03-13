@@ -32,6 +32,10 @@
     % TODO: \capitalisewords{##1}, however does not work with math mode.
     ##1\hspace{1.5em}\dotfill\makebox{\uppercase{##2}}\\
   }
+  \newcommand{\simpleitem}[1]{%
+    % TODO: \capitalisewords{##1}, however does not work with math mode.
+    ##1\\
+  }
   \newcommand{\step}[1]{%
     \hspace*{10em}-\hspace*{\labelsep}##1\\
   }
