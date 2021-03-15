@@ -20,6 +20,7 @@
 \usepackage{amssymb}
 \usepackage{xfrac}
 \usepackage{mfirstuc}
+\usepackage{gensymb}
 
 \renewcommand{\footrulewidth}{0pt}
 \setlength{\tabcolsep}{0pt}
@@ -36,10 +37,21 @@
     % TODO: \capitalisewords{##1}, however does not work with math mode.
     ##1\\
   }
+  \newcommand{\newsection}[1]{%
+    % TODO: \capitalisewords{##1}, however does not work with math mode.
+    \vspace{0.1em}\small{\textbf{\textit{\textellipsis\ \uppercase{##1}}}}\\
+  }
   \newcommand{\step}[1]{%
     \hspace*{10em}-\hspace*{\labelsep}##1\\
   }
   \noindent
   \begin{tabular}{p{0.95\linewidth}}
-       \multicolumn{1}{l}{\textbf{\uppercase{#1}}}\\
+       \multicolumn{1}{l}{\large{\textbf{\uppercase{#1}}}}\\
 }{\end{tabular}\vspace{0.8em}}
+
+% Various V_speeds
+\newcommand{\vfe}[0]{$115$}
+\newcommand{\vr}[0]{$52$}
+\newcommand{\vy}[0]{$76$}
+\newcommand{\vx}[0]{$66$}
+\newcommand{\vg}[0]{$69$}

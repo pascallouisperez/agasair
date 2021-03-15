@@ -1,0 +1,99 @@
+\input{checklist.inc}
+
+\fancyhead[L]{\textbf{Maneuvers}}
+\fancyhead[R]{Piper PA-28-151 (121PW)}
+
+\begin{document}
+
+\begin{multicols}{2}
+  \begin{checklist}{Pre-Maneuver}
+    \item{Ignition}{both}
+    \item{Primer}{locked}
+    \item{Master Switch}{on}
+    \item{Mixture}{rich}
+    \item{Lights}{as required}
+    \item{Clearing turns}{done}
+    \item{Area}{clear}
+\end{checklist}
+
+\begin{checklist}{Slow flight}
+  \item{Throttle}{$1500$ RPM}
+  \simpleitem{\textit{Bleed airspeed, hold altitude.}}
+  \item{Flaps}{below \vfe, 10\degree}
+  \item{Flaps}{below \vfe, 20\degree}
+  \item{Flaps}{down}
+  \item{Throttle}{$2000$ RPM}
+  \newsection{recovery}
+  \item{Throttle}{full}
+  \item{Flaps}{20\degree}
+  \item{Flaps}{positive rate, 10\degree}
+  \item{Flaps}{above 60, up}
+\end{checklist}
+
+\begin{checklist}{Power off stall}
+  \item{Throttle}{$1600$ RPM}
+  \simpleitem{\textit{Bleed airspeed to $65$, hold altitude.}}
+  \item{Flaps}{below \vfe, 10\degree}
+  \item{Flaps}{below \vfe, 20\degree}
+  \item{Flaps}{down}
+  \simpleitem{\textit{Pitch down, maintain $65$ descent.}}
+  \item{Count}{1, 2, 3}
+  \item{Throttle}{idle}
+  \simpleitem{Flare}
+  \simpleitem{\textit{Announce ``imminent stall''}}
+  \newsection{recovery}
+  \item{Pitch}{down}
+  \item{Throttle}{full}
+  \item{Flaps}{20\degree}
+  \item{Flaps}{positive rate, 10\degree}
+  \item{Flaps}{above $65$, up}
+\end{checklist}
+
+\begin{checklist}{Power on stall}
+  \item{Throttle}{$1200$ RPM}
+  \simpleitem{\textit{Bleed airspeed to $V_R$(\vr), hold altitude.}}
+  \item{Throttle}{$2000$ RPM}
+  \item{Pitch}{up}
+  \simpleitem{\textit{``imminent stall'', ``stalling''}}
+  \newsection{recovery}
+  \item{Pitch}{down}
+  \item{Throttle}{full}
+\end{checklist}
+
+\begin{checklist}{Pattern}
+  \item{Throttle}{$2100$ RPM}
+
+  \vspace{0.1em}\simpleitem{\textit{Crosswind}}
+  \item{Turn (steepest)}{downwind leg}
+
+  \vspace{0.1em}\simpleitem{\textit{Downing, midfield}}
+  \item{Flaps}{below \vfe, 10\degree}
+
+  \vspace{0.1em}\simpleitem{\textit{Downwind, abeam the numbers}}
+  \item{Throttle}{$1600$ RPM}
+  \item{Pitch}{down ($2\deg$)}
+
+  \vspace{0.1em}\simpleitem{\textit{Downwind, $45\deg$ of the numbers}}
+  \item{Turn (shallow)}{base leg}
+
+  \vspace{0.1em}\simpleitem{\textit{Base}}
+  \item{Flaps}{below \vfe, 20\degree}
+  \item{Turn (shallowest)}{final leg}
+
+  \vspace{0.1em}\simpleitem{\textit{Final}}
+  \item{Flaps}{below \vfe, 30\degree}
+  \item{Throttle}{adjust}
+  \item{Airspeed}{$70$}
+
+  \vspace{0.1em}\simpleitem{\textit{Short Final}}
+  \item{Airspeed}{$65$}
+
+  \vspace{0.1em}
+  \simpleitem{\textit{Aileron for centerline}}
+  \simpleitem{\textit{Rudder for alignment (yaw)}}
+  \simpleitem{\textit{Pitch for airspeed.}}
+  \simpleitem{\textit{Power for altitude.}}
+\end{checklist}
+
+\end{multicols}
+\end{document}
