@@ -49,9 +49,15 @@
        \multicolumn{1}{l}{\large{\textbf{\uppercase{#1}}}}\\
 }{\end{tabular}\vspace{0.8em}}
 
+% Piper PA-28-151, 1974
+% Ser. no. 28-7415455
+% N-Number: 121PW
+
 % Various V_speeds
-\newcommand{\vfe}[0]{$115$}
-\newcommand{\vr}[0]{$52$}
+\newcommand{\vfe}[0]{$109$}
+\newcommand{\vr}[0]{$60$}
 \newcommand{\vy}[0]{$76$}
 \newcommand{\vx}[0]{$66$}
 \newcommand{\vg}[0]{$69$}
+\newcommand{\vszero}[0]{$50$}
+\newcommand{\vsone}[0]{$56$}
