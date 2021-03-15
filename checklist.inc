@@ -49,6 +49,20 @@
        \multicolumn{1}{l}{\large{\textbf{\uppercase{#1}}}}\\
 }{\end{tabular}\vspace{0.8em}}
 
+% phraseology env sets up a table to present exchanges between pilots and ATC
+% (or appropriate counter-party, possibly even a broadcast in the case of CTAF).
+\newenvironment{phraseology}[1]{%
+    \newcommand{\pilotsays}[1]{%
+        \multicolumn{2}{p{0.8\linewidth}}{##1\vspace{0.5em}}&\ \\
+    }
+    \newcommand{\othersays}[1]{%
+        \ &\multicolumn{2}{p{0.8\linewidth}}{\textit{##1}\vspace{0.5em}}\\
+    }
+    \noindent
+    \begin{tabular}{p{0.15\linewidth} p{0.65\linewidth} p{0.15\linewidth}}
+        \multicolumn{3}{l}{\large{\textbf{\uppercase{#1}}}}\\
+}{\end{tabular}\vspace{0.8em}}
+
 % Piper PA-28-151, 1974
 % Ser. no. 28-7415455
 % N-Number: 121PW
