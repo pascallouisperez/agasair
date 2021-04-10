@@ -6,8 +6,10 @@
 \setlength{\headsep}{10pt}
 \setlength{\textwidth}{450pt}
 \setlength{\textheight}{680pt}
-\usepackage{2up}
-\special{landscape}
+\usepackage{pdflscape}
+\begin{landscape}
+% \usepackage{2up}
+% \special{landscape}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
