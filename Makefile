@@ -4,6 +4,8 @@ all: phraseology 23322 121pw
 
 23322: C150_23322/preflight.dvi C150_23322/flight.dvi
 
+9934q: C172_9934Q/preflight.dvi C172_9934Q/flight.dvi
+
 121pw: PA28-151_121PW/preflight.dvi PA28-151_121PW/flight.dvi PA28-151_121PW/maneuvers.dvi
 
 phraseology: phraseology/phraseology.dvi
