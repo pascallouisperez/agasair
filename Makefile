@@ -1,6 +1,6 @@
 # MacTex distribution http://www.tug.org/mactex/
 
-all: phraseology 23322 121pw
+all: phraseology 23322 9934q 121pw
 
 23322: C150_23322/preflight.dvi C150_23322/flight.dvi
 

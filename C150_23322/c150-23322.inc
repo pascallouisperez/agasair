@@ -1,5 +1,5 @@
 % Cessna 150, 1968
-% N-Number: 23322
+% N-Number: N23322
 
 % Fuel Systems
 % 2 x 13g tanks (22.5g useable fuel)
