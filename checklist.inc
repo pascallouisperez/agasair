@@ -45,7 +45,7 @@
     \hspace*{10em}-\hspace*{\labelsep}##1\\
   }
   \noindent
-  \begin{tabular}{p{0.95\linewidth}}
+  \begin{tabular}{p{\linewidth}}
        \multicolumn{1}{l}{\textbf{\uppercase{#1}}}\\
 }{\end{tabular}\vspace{0.8em}}
 
