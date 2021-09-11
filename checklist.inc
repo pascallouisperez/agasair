@@ -24,6 +24,7 @@
 
 \renewcommand{\footrulewidth}{0pt}
 \setlength{\tabcolsep}{0pt}
+\setlength{\columnsep}{1.5em}
 
 % checklist env sets up a table and format the items.
 % in case a item has steps use the \step{asdf}
