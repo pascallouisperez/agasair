@@ -21,6 +21,8 @@
 \usepackage{xfrac}
 \usepackage{mfirstuc}
 \usepackage{gensymb}
+\usepackage[most]{tcolorbox}
+\usetikzlibrary{patterns.meta}
 
 \renewcommand{\footrulewidth}{0pt}
 \setlength{\tabcolsep}{0pt}
@@ -63,3 +65,7 @@
     \begin{tabular}{p{0.15\linewidth} p{0.65\linewidth} p{0.15\linewidth}}
         \multicolumn{3}{l}{\large{\textbf{\uppercase{#1}}}}\\
 }{\end{tabular}\vspace{0.8em}}
+
+\newtcolorbox{mybox}{enhanced, sharp corners, boxrule=5mm, 
+    frame style={pattern={Lines[angle=45, line width=3mm, distance=6mm]}, 
+    pattern color=red}, colback=white}
