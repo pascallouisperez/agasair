@@ -1,0 +1,9 @@
+(env
+ (dev
+  (flags (:standard -w "-37-27"))))
+(library
+ (name camlair)
+ (libraries base str)
+ (preprocess
+  (pps ppx_inline_test ppx_assert ppx_jane ppx_fields_conv))
+ (inline_tests))
