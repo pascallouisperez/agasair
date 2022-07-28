@@ -6,7 +6,7 @@ all: phraseology 23322 9934q 121pw
 
 9934q: C172_9934Q/preflight.dvi C172_9934Q/flight.dvi
 
-20865: C172_20865/emergency.dvi
+20865: C172_20865/preflight.dvi C172_20865/flight.dvi
 
 121pw: PA28-151_121PW/preflight.dvi PA28-151_121PW/flight.dvi PA28-151_121PW/maneuvers.dvi
 
